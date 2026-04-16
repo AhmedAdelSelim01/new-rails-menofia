@@ -1,5 +1,15 @@
 
 <h1>Posts</h1>
+
+<h1> create new post </h1>
+<form action="/posts" method="post">
+  <label for="title">Title:</label><br>
+  <input type="text" id="title" name="title"><br>
+  <label for="content">Content:</label><br>
+  <textarea id="content" name="content"></textarea><br>
+  <input type="submit" value="Submit">
+</form>
+
 <ul>
 <% @posts.each do |post| %>
   <h2><%= post[:title] %></h2>
